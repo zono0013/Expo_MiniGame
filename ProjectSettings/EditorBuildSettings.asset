@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/bowling.unity
     guid: e7a18a370c3b74c4385bf05bbb42162e
+  - enabled: 1
+    path: Assets/Scenes/DartsScene.unity
+    guid: bd1e4d820612443aba56ad0648ef620f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a8b36f3153e1e1b4eae37e726ff09cf0, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9dcb1ad524e98bf4cac6a761db94c1b0, type: 2}
