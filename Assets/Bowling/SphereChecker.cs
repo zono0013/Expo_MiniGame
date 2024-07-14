@@ -6,6 +6,7 @@ public class SphereChecker : MonoBehaviour
 {
     public GameObject headPrefab;   // Cubeのプレハブ
     public List<GameObject> spheres = new List<GameObject>(); // 監視するSphereのリスト
+    private bool hasGenerated = false; // 生成フラグ
 
     void Start()
     {
@@ -18,6 +19,10 @@ public class SphereChecker : MonoBehaviour
 
     void Update()
     {
+        // 生成フラグが立っている場合は処理しない
+        if (hasGenerated)
+            return;
+
         // すべてのSphereのY座標がマイナスかどうかチェック
         bool minus = true;
         foreach (GameObject sphere in spheres)
@@ -32,8 +37,13 @@ public class SphereChecker : MonoBehaviour
         // すべてのY座標がマイナスならCubeを生成
         if (minus)
         {
-            Instantiate(headPrefab, new Vector3(0, 0.05f, 0.1f), Quaternion.identity);
-            spheres.Clear();
+            if (!hasGenerated){
+                Instantiate(headPrefab, new Vector3(5.5f, 0.8f, -25f), Quaternion.Euler(180, 0, 0));
+                hasGenerated = true;
+                spheres.Clear();
+            }
+
+            
         }
     }
 }

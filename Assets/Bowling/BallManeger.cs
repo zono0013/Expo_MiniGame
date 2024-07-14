@@ -14,6 +14,6 @@ public class BallManeger : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.AddForce(0,0,30);
+        rb.AddForce(0,0,10);
     }
 }
