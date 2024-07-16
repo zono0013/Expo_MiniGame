@@ -4,6 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Target
+  - Correct
+  - Incorrect
   - Door
   - Sphere
   layers:
