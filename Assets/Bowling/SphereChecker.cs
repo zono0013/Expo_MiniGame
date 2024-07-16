@@ -5,6 +5,7 @@ using System.Collections;
 public class SphereChecker : MonoBehaviour
 {
     public GameObject headPrefab;   // Cubeのプレハブ
+    public GameObject panel_eyes;    // Panelのプレハブ
     public List<GameObject> spheres = new List<GameObject>(); // 監視するSphereのリスト
     private bool hasGenerated = false; // 生成フラグ
 
@@ -39,6 +40,7 @@ public class SphereChecker : MonoBehaviour
         {
             if (!hasGenerated){
                 Instantiate(headPrefab, new Vector3(5.5f, 0.8f, -25f), Quaternion.Euler(180, 0, 0));
+                Instantiate(panel_eyes, new Vector3(5.5f, 2.34f, -25f), Quaternion.Euler(0, 0, 180));
                 hasGenerated = true;
                 spheres.Clear();
             }

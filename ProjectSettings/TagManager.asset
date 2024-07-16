@@ -7,6 +7,8 @@ TagManager:
   - Target
   - Correct
   - Incorrect
+  - Door
+  - Sphere
   layers:
   - Default
   - TransparentFX
