@@ -16,7 +16,11 @@ public class Move : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector2 stickR = OVRInput.Get(OVRInput.RawAxis2D.LThumbstick);
+        //Vector2 stickR = OVRInput.Get(OVRInput.RawAxis2D.LThumbstick);
+        // キーボードの入力を取得
+        float moveVertical = Input.GetAxis("Vertical");
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        Vector2 stickR = new Vector2(moveHorizontal, moveVertical);
 
         // Y軸の回転角度を取得
         float yRotation = CenterEyeAnchor.eulerAngles.y;
