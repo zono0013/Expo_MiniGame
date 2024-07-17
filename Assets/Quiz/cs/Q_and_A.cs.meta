@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0456f80443bfd490bb9dabee37232dcd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Quiz_Q: {instanceID: 0}
+  - Q_1: {fileID: 2100000, guid: 8e5cd765be42148ccabfa7eb15ddf23a, type: 2}
+  - A_1: {fileID: 2100000, guid: 8cba3ac2ec2694312acaf59933746bf8, type: 2}
+  - A_2: {fileID: 2100000, guid: 53d4b78b4001a4763bef03441b5869f0, type: 2}
+  - A_3: {instanceID: 0}
+  - explosionSound_Correct: {fileID: 8300000, guid: 88c04f4359db34833a5cead5e5a80bd8, type: 3}
+  - explosionSound_Incorrect: {fileID: 8300000, guid: 2d2c9d51dae6f47e48c728837dedc02e, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
