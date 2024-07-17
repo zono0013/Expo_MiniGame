@@ -9,7 +9,7 @@ public class DoorCollision : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Door"))
         {
-            SceneManager.LoadScene("bowling");
+            SceneManager.LoadScene("OriginScene");
         }
     }
 }
