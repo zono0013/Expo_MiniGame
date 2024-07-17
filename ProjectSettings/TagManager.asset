@@ -12,6 +12,7 @@ TagManager:
   - Quiz
   - Bowling
   - Darts
+  - Origin
   layers:
   - Default
   - TransparentFX

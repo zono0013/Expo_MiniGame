@@ -8,7 +8,8 @@ public class MoveScene : MonoBehaviour
     {
         { "Quiz", "QuizScene" },
         { "Darts", "DartsScene" },
-        { "Bowling", "bowling" }
+        { "Bowling", "bowling" },
+        { "Origin" , "OriginScenes" }
     };
 
     public void OnButtonClick()
