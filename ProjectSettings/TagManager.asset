@@ -9,6 +9,9 @@ TagManager:
   - Incorrect
   - Door
   - Sphere
+  - Quiz
+  - Bowling
+  - Darts
   layers:
   - Default
   - TransparentFX
